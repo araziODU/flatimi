@@ -88,7 +88,7 @@ bake.dependsOn "setupWebsite"
 task deployreports (dependsOn: "bake") {
     doLast {
         def sourceDir = "$buildDir/jbake/";
-        def destURL = "git@github.com:araziODU/ContinuousIntegration.git";  
+        def destURL = "git@github.com:araziODU/flatimi.git";  
         RSync rsync = new RSync()
                 .source(sourceDir)
                 .destination(destURL)
